@@ -13,10 +13,10 @@
     </header>
     <nav>
         <ul>
-            <li id="home"><a href="#" onclick="showSection('home')">Home</a></li>
-            <li id="genre"><a href="#" onclick="showSection('genre')">Genre</a></li>
-            <li id="movies"><a href="#" onclick="showSection('movies')">Movies</a></li>
-            <li id="tv-shows"><a href="#" onclick="showSection('tv-shows')">TV Shows</a></li>
+            <li id="home"><a href="#">Home</a></li>
+            <li id="genre"><a href="#">Genre</a></li>
+            <li id="movies"><a href="#">Movies</a></li>
+            <li id="tv-shows"><a href="#">TV Shows</a></li>
             <li id="login"><a href="#" onclick="openLoginPage()">Login</a></li>
             <li id="search">
                 <form>
@@ -27,17 +27,8 @@
         </ul>
     </nav>
     <main>
-        <section id="home-details">
-            <!-- Home details go here -->
-        </section>
-        <section id="genre-details" style="display: none;">
-            <!-- Genre details go here -->
-        </section>
-        <section id="movie-details" style="display: none;">
+        <section id="movie-details">
             <!-- Movie details go here -->
-        </section>
-        <section id="tv-show-details" style="display: none;">
-            <!-- TV show details go here -->
         </section>
     </main>
     <footer>
@@ -45,23 +36,13 @@
         <img src="https://i.postimg.cc/MG5pqn8j/Black-Simple-Beautiful-Nature-Email-Header-1600-x-400-px-1.png" alt="Footer Image">
     </footer>
 
-    <!-- Script for handling login and showing sections -->
+    <!-- Script for handling login -->
     <script>
         function openLoginPage() {
             // Redirect to your login page or perform any other action
-            window.location.href = 'login.html';
-        }
-
-        function showSection(sectionId) {
-            // Hide all sections
-            var sections = document.getElementsByTagName('section');
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].style.display = 'none';
-            }
-
-            // Show the requested section
-            document.getElementById(sectionId + '-details').style.display = 'block';
+            window.location.href = "/login";
         }
     </script>
 </body>
 </html>
+
