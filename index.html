@@ -23,10 +23,16 @@
             display: flex;
             background-color: black;
             overflow: hidden;
+            justify-content: space-between;
         }
 
         nav li {
-            float: left;
+            display: flex;
+            align-items: center;
+        }
+
+        nav li:last-child {
+            margin-left: auto;
         }
 
         nav li a {
@@ -59,13 +65,13 @@
             <li id="genre"><a href="#">Genre</a></li>
             <li id="movies"><a href="#">Movies</a></li>
             <li id="tv-shows"><a href="#">TV Shows</a></li>
-            <li id="login"><a href="#" onclick="openLoginPage()">Login</a></li>
             <li id="search">
                 <form>
                     <input type="text" placeholder="Enter movie title...">
                     <button type="submit">Search</button>
                 </form>
             </li>
+            <li id="login"><a href="#" onclick="openLoginPage()">Login</a></li>
         </ul>
     </nav>
     <main>
